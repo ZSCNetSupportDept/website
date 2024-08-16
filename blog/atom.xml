@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://developer.zsxyww.com/blog</id>
+    <title>中山学院网络维护科 Blog</title>
+    <updated>2024-06-27T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://developer.zsxyww.com/blog"/>
+    <subtitle>中山学院网络维护科 Blog</subtitle>
+    <icon>https://developer.zsxyww.com/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Hello World!]]></title>
+        <id>https://developer.zsxyww.com/blog/2024/06/27/Hello_World</id>
+        <link href="https://developer.zsxyww.com/blog/2024/06/27/Hello_World"/>
+        <updated>2024-06-27T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This is a Test post]]></summary>
+        <content type="html"><![CDATA[<p><strong>This is a Test post</strong></p>]]></content>
+    </entry>
+</feed>
