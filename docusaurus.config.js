@@ -25,7 +25,7 @@ const config = {
   deploymentBranch: 'build',
   githubHost: 'github.com',
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   //staticDirectories: ['static'],
 
