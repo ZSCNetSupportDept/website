@@ -4,10 +4,55 @@
         <title>中山学院网络维护科 Blog</title>
         <link>https://developer.zsxyww.com/blog</link>
         <description>中山学院网络维护科 Blog</description>
-        <lastBuildDate>Thu, 27 Jun 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 19 Aug 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[ComIntRep的使用教程]]></title>
+            <link>https://developer.zsxyww.com/blog/2024/08/19/ComIntRep的使用教程</link>
+            <guid>https://developer.zsxyww.com/blog/2024/08/19/ComIntRep的使用教程</guid>
+            <pubDate>Mon, 19 Aug 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[介绍]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="介绍">介绍<a class="hash-link" aria-label="Direct link to 介绍" title="Direct link to 介绍" href="https://developer.zsxyww.com/blog/2024/08/19/ComIntRep%E7%9A%84%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B#%E4%BB%8B%E7%BB%8D">​</a></h2>
+<p>如果是操作系统本身的问题导致了用户没法上网的话，传统的办法是先确定故障出现在哪里，然后去修理对应的地方，在这个过程中，难免要接触到修改注册表，协议栈，hosts这类复杂的名词..</p>
+<p>而ComIntRep就是一款一键修复windows网络的神器，全称<code>"Complete Internet Repair"</code>,他的功能有：</p>
+<ul>
+<li>重置 Internet 协议（TCP/ IP 协议）</li>
+<li>修复 Winsock</li>
+<li>更新互联网连接</li>
+<li>刷新 DNS 解析器缓存</li>
+<li>刷新 ARP 缓存</li>
+<li>修复 Internet Explorer</li>
+<li>清除 Windows 更新历史记录</li>
+<li>修复 Windows 自动更新</li>
+<li>修复的 SSL / HTTPS 加密</li>
+<li>重置代理服务器配置</li>
+<li>重置 Windows 防火墙配置</li>
+<li>恢复默认的 hosts 文件</li>
+<li>修复查看工作组计算机<br>
+<!-- -->这款软件可以帮我们很大程度上节省修网的时间，非常推荐使用</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="使用">使用<a class="hash-link" aria-label="Direct link to 使用" title="Direct link to 使用" href="https://developer.zsxyww.com/blog/2024/08/19/ComIntRep%E7%9A%84%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B#%E4%BD%BF%E7%94%A8">​</a></h2>
+<p>勾选你要修复的部分，然后点击<code>Go!</code>,就可以了，系统会自动重置你选择那部分的网络配置，修复完毕后，重启电脑即可<br>
+<!-- -->官方推荐在修复前备份操作系统，点击<code>Maintennace</code>-&gt;<code>System_Restore</code>,然后点击“配置”，“启用系统保护”，然后为C盘创建一个还原点，就可以修复了</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="参考">参考<a class="hash-link" aria-label="Direct link to 参考" title="Direct link to 参考" href="https://developer.zsxyww.com/blog/2024/08/19/ComIntRep%E7%9A%84%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B#%E5%8F%82%E8%80%83">​</a></h2>
+<p><a href="https://zhuanlan.zhihu.com/p/27196344" target="_blank" rel="noopener noreferrer">https://zhuanlan.zhihu.com/p/27196344</a> <br>
+<a href="https://rizonesoft.com/downloads/complete-internet-repair/" target="_blank" rel="noopener noreferrer">https://rizonesoft.com/downloads/complete-internet-repair/</a> \</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[你可以在哪里找到开发组？]]></title>
+            <link>https://developer.zsxyww.com/blog/2024/08/18/网维联系方式</link>
+            <guid>https://developer.zsxyww.com/blog/2024/08/18/网维联系方式</guid>
+            <pubDate>Sun, 18 Aug 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[目前，开发组成员可以通过如下的方式联系：]]></description>
+            <content:encoded><![CDATA[<p>目前，开发组成员可以通过如下的方式联系：</p>
+<ul>
+<li>开发组成员可以通过github上的<a href="https://github.com/ZSCNetSupportDept/forum/discussions" target="_blank" rel="noopener noreferrer">论坛</a>交流(仅限内部访问)</li>
+<li>开发组有一个QQ群：961797864</li>
+<li>可以联系组长,QQ:2597760847</li>
+</ul>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Hello World!]]></title>
             <link>https://developer.zsxyww.com/blog/2024/06/27/Hello_World</link>
