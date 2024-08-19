@@ -5,7 +5,7 @@
 运行`npm run docusaurus deploy`可以自动构建静态网站，并且push到`build`上\
 https://zscdev-demo.pages.dev 是本仓库的一个demo网站，基于master构建而不是build
 ## 部署
-参见 https://zscdev-demo.pages.dev/docs/devdocs/网站/开发组网站-部署
+参见 https://zscdev-demo.pages.dev/docs/devdocs/网站/开发组网站/开发组网站-部署
 ## 内容发布
 参见文档
 ## 关于
