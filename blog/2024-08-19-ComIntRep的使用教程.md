@@ -23,6 +23,6 @@
 官方推荐在修复前备份操作系统，点击`Maintennace`->`System_Restore`,然后点击“配置”，“启用系统保护”，然后为C盘创建一个还原点，就可以修复了
 ## 参考
 https://zhuanlan.zhihu.com/p/27196344 \
-https://rizonesoft.com/downloads/complete-internet-repair/ \
+<!-- https://rizonesoft.com/downloads/complete-internet-repair/ \ -->
 
 
