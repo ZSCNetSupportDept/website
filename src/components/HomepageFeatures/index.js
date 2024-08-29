@@ -11,6 +11,7 @@ const FeatureList = [
         网维的知识库
       </>
     ),
+    link: '/docs/wiki/首页',
   },
   {
     title: '开发组文档',
@@ -20,6 +21,7 @@ const FeatureList = [
         开发组的文档
       </>
     ),
+    link: "/docs/devdocs/首页",
   },
   {
     title: '公告',
@@ -29,6 +31,7 @@ const FeatureList = [
         公告和博客
       </>
     ),
+    link:"/blog",
   },
 ];
 
@@ -36,7 +39,9 @@ function Feature({Svg, title, description}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+         <a href={FeatureList.link}>
+          <Svg className={styles.featureSvg} role="img" />
+         </a>
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
@@ -59,3 +64,4 @@ export default function HomepageFeatures() {
     </section>
   );
 }
+
