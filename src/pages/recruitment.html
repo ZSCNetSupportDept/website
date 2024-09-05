@@ -1,0 +1,106 @@
+<html>
+<head>
+<style>
+form {
+  /* 居中表单 */
+  margin: 0 auto;
+  width: 400px;
+  /* 显示表单的轮廓 */
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  /* 确保所有 label 大小相同并正确对齐 */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input,
+textarea {
+  /* 确保所有文本输入框字体相同
+     textarea 默认是等宽字体 */
+  font: 1em sans-serif;
+
+  /* 使所有文本输入框大小相同 */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* 调整文本输入框的边框样式 */
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  /* 给激活的元素一点高亮效果 */
+  border-color: #aa00ff;
+}
+
+textarea {
+  /* 使多行文本输入框和它们的 label 正确对齐 */
+  vertical-align: top;
+
+  /* 给文本留下足够的空间 */
+  height: 5em;
+}
+
+.button {
+  /* 把按钮放到和文本输入框一样的位置 */
+  padding-left: 90px; /* 和 label 的大小一样 */
+}
+
+button {
+  /* 这个外边距的大小与 label 和文本输入框之间的间距差不多 */
+  margin-left: 0.5em;
+}
+</style>
+
+</head>
+ <body>
+ <h1 align=center>中山学院网络维护科招新系统</h1>
+  <form action="/api/recruitment_request" method="post">
+   <ul>
+   <p align=center><b><em>在这里填写你的招新报名信息：</em></b></p>
+    <li>
+      <label for="name">姓名：</label>
+      <input type="text" id="name" name="user_name" required maxlength=10 />
+    </li>
+    <li>
+     <label for="id">学号：</label>
+     <input type="number" id="id" name="id" required maxlength=15 />
+    </li>
+    <li>
+    <label for="tel">电话：</label>
+    <input type="tel" id="tel" name="tel" required maxlength=11 minlength=11 />
+    </li>
+    <li>
+      <label for="mail">邮箱：</label>
+      <input type="email" id="mail" name="user_email" required/>
+    </li>
+    <li class="button">
+     <button type="submit">提交</button>
+    </li>
+   </ul>
+  </form>
+    <message note="这里是后端返回的信息容器">
+    <p align=center textcolor=#aa00ff></p>
+    </message>
+    <footer >
+    <p id=copyright align=center>2024@ZSC Network Support</p>
+    <p id=contact align=center>招新QQ群：</p>
+    </footer>
+
+ </body>
+</html>
