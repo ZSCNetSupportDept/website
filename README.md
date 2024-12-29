@@ -3,12 +3,14 @@
 ## 依赖
 `nodejs >= 18.0`
 ## 构建
-不同于传统的静态网页生成器，本项目不需要额外加装构建工具，生成器和内容本身加起来就是一个单独的react.js应用，所以理论上你只需要把这个repo pull到本地，再用npm构建即可，运行`npm run docusaurus`来运行框架本身提供的一些脚本.
-要构建可以拿去部署的静态网站资源，运行：
 
-```
+在终端输入以下命令：
+
+``` shell
 
 git clone https://github.com/ZSCNetSupportDept/website
+
+cd website
 
 npm install
 
@@ -16,7 +18,9 @@ npm run docusaurus build
 
 ```
 
-运行`npm run docusaurus deploy`可以自动构建静态网站，并且push到`build`上\
+然后在`build`文件夹下就出现了编译过后的结果，可以进行下一步的部署
+
+运行`npm run docusaurus deploy`可以自动构建并部署静态网站，在构建之后，还会自动将结果推送到仓库的`build`分支上，服务器部署了脚本自动抓取这个分支的内容来更新网站\
 https://zscdev-demo.pages.dev 是本仓库的一个demo网站，基于master构建而不是build
 ## 部署
 参见 https://zscdev-demo.pages.dev/docs/devdocs/网站/开发组网站/开发组网站-部署
