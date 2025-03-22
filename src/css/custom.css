@@ -28,3 +28,22 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+.markdown h2 {
+  position: relative;
+  padding-left: 16px;
+  border-left: 6px solid var(--ifm-color-primary);
+  font-weight: bold;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0));
+  display: inline-block;
+  max-width: fit-content;
+}
+
+html[data-theme='dark'] .markdown h2 {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0));
+  border-left-color: var(--ifm-color-primary-light);
+}
