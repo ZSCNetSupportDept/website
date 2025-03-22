@@ -1,0 +1,80 @@
+/* 让 DocsCard 采用两列布局 */
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2列布局 */
+  gap: 16px; /* 卡片间距 */
+  max-width: 800px; /* 限制最大宽度 */
+  margin: 0 auto; /* 居中 */
+  padding: 16px;
+}
+
+/* 单个卡片样式 */
+.card {
+  background: var(--ifm-background-color);
+  border: 2px solid var(--ifm-color-primary); /* Docusaurus 主题色（默认绿色） */
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+/* 悬停时边框加深 */
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+  border-color: var(--ifm-color-primary-dark); /* 悬停时颜色变深 */
+}
+
+/* 让整个卡片可点击 */
+.cardLink {
+  text-decoration: none;
+  color: var(--ifm-font-color-base);
+  display: block;
+  padding: 10px 0;
+}
+
+/* 标题美化 */
+.card h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--ifm-heading-color);
+}
+
+/* 让描述文字更简洁 */
+.card p {
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: var(--ifm-font-color-secondary);
+}
+
+/* 🔹 移动端优化：小屏幕时改为一列 */
+@media (max-width: 768px) {
+  .cardContainer {
+    grid-template-columns: 1fr; /* 小屏幕时一列 */
+  }
+
+  .card {
+    padding: 16px;
+    border-radius: 10px;
+  }
+
+  .card h3 {
+    font-size: 18px;
+  }
+
+  .card p {
+    font-size: 13px;
+  }
+}
+
+/* 🌙 适配黑暗模式 */
+html[data-theme='dark'] .card {
+  background: var(--ifm-background-surface-color);
+  border-color: var(--ifm-color-primary-light);
+}
+
+html[data-theme='dark'] .card:hover {
+  border-color: var(--ifm-color-primary);
+}
