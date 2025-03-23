@@ -64,9 +64,11 @@ const config = {
     ],
   ],
 
+  themes: ['@docusaurus/theme-mermaid'],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      //mermaid: {},  // 这里可以先尝试空对象，避免不兼容
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
@@ -167,7 +169,22 @@ const config = {
         },
       ],
      // see https://www.docusaurus.cn/docs/api/docusaurus-config#headTags
+
+
+      mermaid: {
+        theme: {light: 'default', dark: 'neutral'},
+        options: {
+          darkMode: true,
+          background: '#ffffff',
+        },
+      },
+
     }),
+  markdown: {
+
+          mermaid: true,
+  },
+
 };
 
 export default config;
