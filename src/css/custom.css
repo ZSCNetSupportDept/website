@@ -47,3 +47,9 @@ html[data-theme='dark'] .markdown h2 {
   background: linear-gradient(to right, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0));
   border-left-color: var(--ifm-color-primary-light);
 }
+
+/* 强制 Mermaid 图表在黑暗模式下使用白色背景 */
+html[data-theme='dark'] .mermaid {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
