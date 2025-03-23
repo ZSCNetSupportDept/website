@@ -15,14 +15,14 @@
         <summary type="html"><![CDATA[许多新进网维的小伙伴们都可能对我们的日常工作一脸懵：网维是干什么的，我们到底在修什么？其他人说的交换机，主线到底是什么？]]></summary>
         <content type="html"><![CDATA[<p>许多新进网维的小伙伴们都可能对我们的日常工作一脸懵：网维是干什么的，我们到底在修什么？其他人说的交换机，主线到底是什么？</p>
 <p>甚至有很多正式成员都搞不明白这个问题，为了提升大家的业务水平和网络技术，我们特意编写了这份指南，希望能对你有些许的用处。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="网络">网络<a class="hash-link" aria-label="Direct link to 网络" title="Direct link to 网络" href="https://developer.zsxyww.com/blog/%E7%BB%99%E7%BA%AF%E6%96%B0%E6%89%8B%E7%9A%84%E7%BD%91%E7%BB%B4%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97#%E7%BD%91%E7%BB%9C">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="网络">网络<a href="https://developer.zsxyww.com/blog/%E7%BB%99%E7%BA%AF%E6%96%B0%E6%89%8B%E7%9A%84%E7%BD%91%E7%BB%B4%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97#%E7%BD%91%E7%BB%9C" class="hash-link" aria-label="Direct link to 网络" title="Direct link to 网络">​</a></h2>
 <p>网维，那不就是修网络的吗？但是，网络是什么？他究竟是什么样的？为什么我可以访问到遥远彼方的内容（网页，游戏，等）？</p>
 <p>首先，我们需要知道，计算机中的一切数据，都是一串二进制数字，也就是许多的01010101101010.........,网络的本质，就是在计算机之间传输这些数字，如何进行传输呢？通常是使用物理现实的两种状态来表示0和1这两个数字。</p>
 <p>比如，一个电路（简单点说，有一个电灯），电路闭合，电灯亮，我们定义这样的状态是1,反之，电路断开，电灯暗，我们定义这样的状态为0,我们让计算机监听这个电路的状态，通过电路断开闭合状态不断的超高速的变化，就可以传递01010101这些数字来进行信息的传递。</p>
 <div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>信息</div><div class="admonitionContent_BuS1"><p>这里有我们写的一篇科普文章，介绍了网线的一些概念：<a href="https://developer.zsxyww.com/docs/wiki/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E7%A7%91%E6%99%AE/%E7%BD%91%E7%BA%BF%E6%98%AF%E4%BB%80%E4%B9%88">Click Me</a></p></div></div>
 <p>不一定需要电路这种介质，还可以是无线电波，例如，定义电波幅度大于某个值为1,小于某个值为0，或者大于某个频率为0,小于某个频率为1,让计算机接受这样的电波并解读，也可以传递信息。</p>
 <p>其实，简单地说，前者就是以太网（有线网）本质，网线本质上就是电线，里面是以高频率断断续续的电流，把电线接到计算机里，计算机就可以依据电路的变化情况来获取信息.而后者则是无线网(Wi-Fi,移动通信技术等)本质，他们通过调制电磁波来传递信息。</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="网维">网维<a class="hash-link" aria-label="Direct link to 网维" title="Direct link to 网维" href="https://developer.zsxyww.com/blog/%E7%BB%99%E7%BA%AF%E6%96%B0%E6%89%8B%E7%9A%84%E7%BD%91%E7%BB%B4%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97#%E7%BD%91%E7%BB%B4">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="网维">网维<a href="https://developer.zsxyww.com/blog/%E7%BB%99%E7%BA%AF%E6%96%B0%E6%89%8B%E7%9A%84%E7%BD%91%E7%BB%B4%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97#%E7%BD%91%E7%BB%B4" class="hash-link" aria-label="Direct link to 网维" title="Direct link to 网维">​</a></h3>
 <p>网维主要修的是学生宿舍的以太网，在每个宿舍的每个人的桌子前，都有一个网线端口，用户将网线插入端口和计算机，即可连接到宿舍的楼层线路，端口后面是墙线，意思是它是埋在墙里的，我们一般情况下没法动他</p>
 <p>依据宿舍片区的不同，墙线可能直接通去了机房，也有可能是连接到了宿舍的路由器（交换机/光猫），经过这一层转发，再前往机房。</p>
 <div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>提示</div><div class="admonitionContent_BuS1"><p>你可以在片区信息中查看各个片区的具体结构</p></div></div>
@@ -31,13 +31,13 @@
 <p>出去是去哪里呢？在宿舍的结构中，是去了机房（或者说，弱电井），宿舍去机房的线就叫做主线（只有通过网关中继的地方才会有主线的概念，直连机房的就直接是墙线）</p>
 <p>线路到了机房，一般会接入一个叫做配线架的设备，这个也是一个中继器，方便我们维修（如果是线路坏了的话），配线架的端口总是成对的，有一个进口就会有出口，一般进口都是不用我们去管的，线路经过出口出来，连接到交换机上，我们网维的工作一般追踪到这里，再往后的问题就不是我们的职责了，</p>
 <p>交换机有运营商的区别，用户需要接到他宽带开通的运营商对应的交换机上，通过一类叫做“拨号”的协议来进行认证，向运营商用自己的账号请求登录，请求运营商允许联网，这样也方便运营商计费（和学校监控!）,交换机通常都是集成了光纤功能，在这里将电路的信号调制成光的信号（这也是一种传输0101010的方式！），然后接入运营商的网络，访问全国，和全球的互联网</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="维修">维修<a class="hash-link" aria-label="Direct link to 维修" title="Direct link to 维修" href="https://developer.zsxyww.com/blog/%E7%BB%99%E7%BA%AF%E6%96%B0%E6%89%8B%E7%9A%84%E7%BD%91%E7%BB%B4%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97#%E7%BB%B4%E4%BF%AE">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="维修">维修<a href="https://developer.zsxyww.com/blog/%E7%BB%99%E7%BA%AF%E6%96%B0%E6%89%8B%E7%9A%84%E7%BD%91%E7%BB%B4%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97#%E7%BB%B4%E4%BF%AE" class="hash-link" aria-label="Direct link to 维修" title="Direct link to 维修">​</a></h2>
 <p>上面就是我们学校宿舍网络的结构了，网维的工作，本质就是维护这样的结构正常运行，在这些环节中，每一个都有可能出错，一般来说，我们最常见的有两种错误：硬件(物理层)错误(651)和软件错误(691).</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="651错误">651错误<a class="hash-link" aria-label="Direct link to 651错误" title="Direct link to 651错误" href="https://developer.zsxyww.com/blog/%E7%BB%99%E7%BA%AF%E6%96%B0%E6%89%8B%E7%9A%84%E7%BD%91%E7%BB%B4%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97#651%E9%94%99%E8%AF%AF">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="651错误">651错误<a href="https://developer.zsxyww.com/blog/%E7%BB%99%E7%BA%AF%E6%96%B0%E6%89%8B%E7%9A%84%E7%BD%91%E7%BB%B4%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97#651%E9%94%99%E8%AF%AF" class="hash-link" aria-label="Direct link to 651错误" title="Direct link to 651错误">​</a></h3>
 <p>硬件错误，通常在拨号时会给出<code>651</code>错误，本质上，这种错误就是物理连接出现了问题，要么是墙线老化接触不良了，要么是主线出现了问题，要么是交换机，配线架没有接好，要么是网线问题，对于这种问题，我们通常通过寻线对线器来解决，排查问题</p>
 <p>排查问题一般都是调试可能出错的因素，例如，你用一根确定了的是好的网线直连端口对线没问题，但是用户的线连接端口就有问题，那么就是用户的线有问题</p>
 <div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>信息</div><div class="admonitionContent_BuS1"><p>关于更多651错误，请查阅wiki相关页面，也请查阅<code>技能</code>板块中<code>对线</code>和<code>寻线</code>的条目</p></div></div>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="691错误">691错误<a class="hash-link" aria-label="Direct link to 691错误" title="Direct link to 691错误" href="https://developer.zsxyww.com/blog/%E7%BB%99%E7%BA%AF%E6%96%B0%E6%89%8B%E7%9A%84%E7%BD%91%E7%BB%B4%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97#691%E9%94%99%E8%AF%AF">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="691错误">691错误<a href="https://developer.zsxyww.com/blog/%E7%BB%99%E7%BA%AF%E6%96%B0%E6%89%8B%E7%9A%84%E7%BD%91%E7%BB%B4%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97#691%E9%94%99%E8%AF%AF" class="hash-link" aria-label="Direct link to 691错误" title="Direct link to 691错误">​</a></h3>
 <p>软件错误，通常会在拨号时给出<code>691</code>错误，本质上，这意味着物理连接是通的，但是运营商那边拒绝的用户的登录，有几种可能：</p>
 <ol>
 <li>交换机接错了，用户是某个运营商，你接到了其他的运营商的交换机，当然报错喽～</li>
@@ -47,7 +47,7 @@
 <li>运营商会绑定MAC地址来限制多设备，在更换电脑或者转接器等设备时会遇到这样的情况，可以打电话给运营商要求所谓的“解绑刷新”，也可以组长</li>
 </ol>
 <div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>信息</div><div class="admonitionContent_BuS1"><p>关于更多691错误，请查阅wiki的相关页面，和相应的文章</p></div></div>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="总结">总结<a class="hash-link" aria-label="Direct link to 总结" title="Direct link to 总结" href="https://developer.zsxyww.com/blog/%E7%BB%99%E7%BA%AF%E6%96%B0%E6%89%8B%E7%9A%84%E7%BD%91%E7%BB%B4%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97#%E6%80%BB%E7%BB%93">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="总结">总结<a href="https://developer.zsxyww.com/blog/%E7%BB%99%E7%BA%AF%E6%96%B0%E6%89%8B%E7%9A%84%E7%BD%91%E7%BB%B4%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97#%E6%80%BB%E7%BB%93" class="hash-link" aria-label="Direct link to 总结" title="Direct link to 总结">​</a></h2>
 <p>这里只是一篇简要的指南，我们在这里介绍了网络的基本概念，让你对你所要维修的系统有一个大概的了解，你可以继续去看wiki中的相关条目，来进一步扩充你的知识，希望你在网维的时光过得愉快！</p>]]></content>
     </entry>
     <entry>
@@ -56,7 +56,7 @@
         <link href="https://developer.zsxyww.com/blog/2024/08/19/ComIntRep的使用教程"/>
         <updated>2024-08-19T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[介绍]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="介绍">介绍<a class="hash-link" aria-label="Direct link to 介绍" title="Direct link to 介绍" href="https://developer.zsxyww.com/blog/2024/08/19/ComIntRep%E7%9A%84%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B#%E4%BB%8B%E7%BB%8D">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="介��绍">介绍<a href="https://developer.zsxyww.com/blog/2024/08/19/ComIntRep%E7%9A%84%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B#%E4%BB%8B%E7%BB%8D" class="hash-link" aria-label="Direct link to 介绍" title="Direct link to 介绍">​</a></h2>
 <p>如果是操作系统本身的问题导致了用户没法上网的话，传统的办法是先确定故障出现在哪里，然后去修理对应的地方，在这个过程中，难免要接触到修改注册表，协议栈，hosts这类复杂的名词..</p>
 <p>而ComIntRep就是一款一键修复windows网络的神器，全称<code>"Complete Internet Repair"</code>,他的功能有：</p>
 <ul>
@@ -75,10 +75,10 @@
 <li>修复查看工作组计算机<br>
 <!-- -->这款软件可以帮我们很大程度上节省修网的时间，非常推荐使用</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="使用">使用<a class="hash-link" aria-label="Direct link to 使用" title="Direct link to 使用" href="https://developer.zsxyww.com/blog/2024/08/19/ComIntRep%E7%9A%84%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B#%E4%BD%BF%E7%94%A8">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="使用">使用<a href="https://developer.zsxyww.com/blog/2024/08/19/ComIntRep%E7%9A%84%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B#%E4%BD%BF%E7%94%A8" class="hash-link" aria-label="Direct link to 使用" title="Direct link to 使用">​</a></h2>
 <p>勾选你要修复的部分，然后点击<code>Go!</code>,就可以了，系统会自动重置你选择那部分的网络配置，修复完毕后，重启电脑即可<br>
 <!-- -->官方推荐在修复前备份操作系统，点击<code>Maintennace</code>-&gt;<code>System_Restore</code>,然后点击“配置”，“启用系统保护”，然后为C盘创建一个还原点，就可以修复了</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="参考">参考<a class="hash-link" aria-label="Direct link to 参考" title="Direct link to 参考" href="https://developer.zsxyww.com/blog/2024/08/19/ComIntRep%E7%9A%84%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B#%E5%8F%82%E8%80%83">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="参考">参考<a href="https://developer.zsxyww.com/blog/2024/08/19/ComIntRep%E7%9A%84%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B#%E5%8F%82%E8%80%83" class="hash-link" aria-label="Direct link to 参考" title="Direct link to 参考">​</a></h2>
 <p><a href="https://zhuanlan.zhihu.com/p/27196344" target="_blank" rel="noopener noreferrer">https://zhuanlan.zhihu.com/p/27196344</a> \</p>]]></content>
     </entry>
     <entry>
