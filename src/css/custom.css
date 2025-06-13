@@ -53,3 +53,14 @@ html[data-theme='dark'] .mermaid {
   background-color: #ffffff !important;
   color: #000000 !important;
 }
+
+.docs-card h2 {
+  padding-left: initial;
+  border-left: initial;
+  margin-top: initial;
+  margin-bottom: initial;
+  padding: initial;
+  border-radius: initial;
+  background: initial;
+
+}

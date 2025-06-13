@@ -1,0 +1,8 @@
+# 电脑技能
+维修的时候要使用电脑，这里介绍电脑的基本操作
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList  className="docs-card" />
+
+
