@@ -91,7 +91,7 @@ const config = {
             position: 'left',
             label: '开发组文档',
           },
-          {to: '/blog', label: '公告', position: 'left'},
+          {to: '/blog', label: '文章', position: 'left'},
           {
             href: 'https://github.com/ZSCNetSupportDept/',
             label: 'GitHub',
