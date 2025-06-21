@@ -18,7 +18,7 @@
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
+[data-theme="dark"] {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
@@ -43,13 +43,17 @@
   max-width: fit-content;
 }
 
-html[data-theme='dark'] .markdown h2 {
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0));
+html[data-theme="dark"] .markdown h2 {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.01),
+    rgba(255, 255, 255, 0)
+  );
   border-left-color: var(--ifm-color-primary-light);
 }
 
 /* 强制 Mermaid 图表在黑暗模式下使用白色背景 */
-html[data-theme='dark'] .mermaid {
+html[data-theme="dark"] .mermaid {
   background-color: #ffffff !important;
   color: #000000 !important;
 }
@@ -62,5 +66,8 @@ html[data-theme='dark'] .mermaid {
   padding: initial;
   border-radius: initial;
   background: initial;
-
 }
+
+/*.pagination-nav {
+  display: none;
+}*/
