@@ -53,9 +53,8 @@ html[data-theme="dark"] .markdown h2 {
 }
 
 /* 强制 Mermaid 图表在黑暗模式下使用白色背景 */
-html[data-theme="dark"] .mermaid {
-  background-color: #ffffff !important;
-  color: #000000 !important;
+html[data-theme="dark"] .docusaurus-mermaid-container {
+  background-color: #ffffff;
 }
 
 .docs-card h2 {

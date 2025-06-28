@@ -61,8 +61,9 @@ const config = {
       }),
     ],
   ],
-//When using TypeScript ,there may return an error!
-  themes: [ [
+  //When using TypeScript ,there may return an error!
+  themes: [
+    [
       require.resolve("@easyops-cn/docusaurus-search-local"),
       /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
       ({
@@ -75,7 +76,9 @@ const config = {
 
         highlightSearchTermsOnTargetPage: true,
       }),
-    ],"@docusaurus/theme-mermaid",],
+    ],
+    "@docusaurus/theme-mermaid",
+  ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -182,7 +185,7 @@ const config = {
       // see https://www.docusaurus.cn/docs/api/docusaurus-config#headTags
 
       mermaid: {
-        theme: { light: "default", dark: "neutral" },
+        theme: { light: "default", dark: "default" },
         options: {
           darkMode: true,
           background: "#ffffff",
