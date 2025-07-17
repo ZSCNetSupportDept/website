@@ -161,6 +161,7 @@ const config = {
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
+        additonalLanguages: ["Java", "PHP", "Bash"],
       },
       docs: {
         sidebar: {
