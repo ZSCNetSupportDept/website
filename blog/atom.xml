@@ -284,7 +284,11 @@
 <p>浏览器其实并不能直接理解前端框架(Vue,React等)写的代码。因为它们并不是标准JavaScript，它们含有大量自定义的语法。因此，前端开发必须要把使用了框架的代码<strong>编译</strong>成浏览器可以理解的HTML,CSS,JavaScript。请注意，类似JQuery这样的库是不需要编译的，因为它们并没有超出原生的JavaScript功能和语法，而只是一个类库。你只需要在你的HTML里包含它们就可以。</p>
 <p>构建系统是现代前端开发的重要一环，除了编译高级JavaScript代码外，构建系统通常还会做一些打包，压缩等杂活；这是现代前端开发必不可少的一环。常用的构建系统有Vite和Webpack</p>
 <hr>
-<p>JavaScript并不是天生开发复杂应用的语言，所以SPA框架提供了那么多的机制，来把这个为简单脚本设计的语言变成一个足够开发可靠Web应用的语言，尽管一层一层的嵌套拖慢了性能，但是Web的性能瓶颈通常不在于计算而是I/O，再加上互联网所谓"敏捷开发"的风气,导致了前端基本几天就要推出新技术，眼花缭乱层出不穷，但是这些技术底层都是差不多的。重要的是不要被各种宣传迷惑了认知，而要认清它们的本质。</p>
+<p>JavaScript并不是天生开发复杂应用的语言，所以SPA框架提供了那么多的机制，来把这个为简单脚本设计的语言变成一个足够开发可靠Web应用的语言，尽管一层一层的嵌套拖慢了性能，但是Web的性能瓶颈通常不在于计算而是I/O,加上业界大环境的各种因素,导致了前端基本几天就要推出新技术，眼花缭乱层出不穷，但是这些技术底层都是差不多的。重要的是不要被各种宣传迷惑了认知，而要认清它们的本质。</p>
+<p><img decoding="async" loading="lazy" alt="JavaScript fatigue" src="https://developer.zsxyww.com/assets/images/comic-301f3ee2297b346a30c21987f2cde629.png" width="1323" height="2425" class="img_ev3q"></p>
+<blockquote>
+<p>"JavaScript Fatigue"，图源<a href="https://auth0.com/blog/how-to-manage-javascript-fatigue/" target="_blank" rel="noopener noreferrer">Auth0博客</a></p>
+</blockquote>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="javascript全栈">JavaScript全栈<a href="https://developer.zsxyww.com/blog/Web%E7%9A%84%E5%8E%86%E5%8F%B23%EF%B8%8F%E2%83%A3-Web%E5%BA%94%E7%94%A8#javascript%E5%85%A8%E6%A0%88" class="hash-link" aria-label="Direct link to JavaScript全栈" title="Direct link to JavaScript全栈">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="nodejs">Node.js<a href="https://developer.zsxyww.com/blog/Web%E7%9A%84%E5%8E%86%E5%8F%B23%EF%B8%8F%E2%83%A3-Web%E5%BA%94%E7%94%A8#nodejs" class="hash-link" aria-label="Direct link to Node.js" title="Direct link to Node.js">​</a></h3>
 <p>前面提到，JavaScript是专门设计运行在浏览器中的语言，也就是说，JavaScript的运行时就是浏览器，不过JavaScript也有浏览器之外的运行时，最出名的叫做<code>Node.js</code>；</p>
@@ -292,7 +296,7 @@
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="web开发之外">Web开发之外<a href="https://developer.zsxyww.com/blog/Web%E7%9A%84%E5%8E%86%E5%8F%B23%EF%B8%8F%E2%83%A3-Web%E5%BA%94%E7%94%A8#web%E5%BC%80%E5%8F%91%E4%B9%8B%E5%A4%96" class="hash-link" aria-label="Direct link to Web开发之外" title="Direct link to Web开发之外">​</a></h3>
 <p>Node.js能做的也不只是Web开发，传统编程语言可以做的Node.js都可以，在Web外最重要的领域就是桌面开发了，通常使用Electron框架，可以让你使用HTML,CSS来编写GUI界面，用JavaScript来操作界面。</p>
 <p>因为依赖问题，通常每个Electron App 都打包了自己的Node.js运行时，每安装一个App，就相当于安装了一个浏览器内核。这严重浪费了电脑的内存和硬盘空间，但好处就是方便了开发。会写Web就能做桌面开发，降低了学习成本，也更方便跨平台。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="最新技术">最新技术<a href="https://developer.zsxyww.com/blog/Web%E7%9A%84%E5%8E%86%E5%8F%B23%EF%B8%8F%E2%83%A3-Web%E5%BA%94%E7%94%A8#%EF%BF%BD%EF%BF%BD%E6%9C%80%E6%96%B0%E6%8A%80%E6%9C%AF" class="hash-link" aria-label="Direct link to 最新技术" title="Direct link to 最新技术">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="最新技术">最新技术<a href="https://developer.zsxyww.com/blog/Web%E7%9A%84%E5%8E%86%E5%8F%B23%EF%B8%8F%E2%83%A3-Web%E5%BA%94%E7%94%A8#%E6%9C%80%E6%96%B0%E6%8A%80%E6%9C%AF" class="hash-link" aria-label="Direct link to 最新技术" title="Direct link to 最新技术">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="websocket">WebSocket<a href="https://developer.zsxyww.com/blog/Web%E7%9A%84%E5%8E%86%E5%8F%B23%EF%B8%8F%E2%83%A3-Web%E5%BA%94%E7%94%A8#websocket" class="hash-link" aria-label="Direct link to WebSocket" title="Direct link to WebSocket">​</a></h3>
 <p>HTTP已经很好了，但是协议本身有一个缺点:一个HTTP连接分为请求和响应，只能由客户端发起请求，服务端返回响应，如果客户端没有先发一点什么给服务端的话，服务端是没办法先给客户端发信息的，这就给一些更加复杂的要求增添了障碍：比如通过浏览器和别人聊天，需要接受来自服务器发给你的其他人的聊天的信息；或者是在浏览器上玩游戏，需要和服务器交换数据。这可以通过轮询来解决，但是这样还是不方便，效率也较低。</p>
 <p>WebSocket是一个全新的协议，支持客户端和服务器的全双工通信，即客户端和服务器都可以主动地发消息，而且可以同时进行，而且是采用较小的数据帧格式，降低了网络开销，提高了数据传输速度。WebSocket在建立连接后保持长时间有效，不需要为每次消息发送重新建立连接，因此效率更高。</p>
