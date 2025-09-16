@@ -67,6 +67,6 @@ html[data-theme="dark"] .docusaurus-mermaid-container {
   background: initial;
 }
 
-/*.pagination-nav {
+.pagination-nav {
   display: none;
-}*/
+}
