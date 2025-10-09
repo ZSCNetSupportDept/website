@@ -65,9 +65,7 @@
 
 > 如果你想立即开始技术培训的话，不妨看看[这篇文章](/blog/2024/09/27/给纯新手的网维快速入门指南)和wiki
 
-
 > 一些实用的网址：  
 > 官网： https://zsxyww.com  
 > 新wiki: https://zsxyww.com/wiki  
 > 下载中心: https://disk.zsxyww.com
-
