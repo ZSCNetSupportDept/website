@@ -1,6 +1,6 @@
 ---
 
-description: ...
+description: DNS是什么，我们的日常工作中有什么和DNS有关系？
 
 ---
 
