@@ -29,6 +29,9 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+/* 上面的是系统自动生成的网站全局配色样式，想修改颜色可以动，但是要做好设计，不要搞得太丑了 */
+/* 下面是我们的自定义CSS，对网站是全局生效的 */
+
 .markdown h2 {
   position: relative;
   padding-left: 16px;
@@ -69,4 +72,18 @@ html[data-theme="dark"] .docusaurus-mermaid-container {
 
 .pagination-nav {
   display: none;
+}
+
+/* blockquote 样式 */
+.markdown blockquote {
+  background-color: #f0f0f0; /* 浅灰色背景 */
+  border-left: 5px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  color: #333;
+}
+html[data-theme="dark"] .markdown blockquote {
+  background-color: #333;
+  border-left-color: #555;
+  color: #f1f1f1;
 }
