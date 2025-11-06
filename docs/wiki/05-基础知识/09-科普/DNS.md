@@ -46,11 +46,22 @@ DNS 是进行域名和与之相对应的 IP 地址转换的服务器。DNS 中�
 
   - 查询浏览器缓存
     - Chrome 浏览器访问 `chrome://net-internals/#dns`，可查询浏览器缓存
-    - 其他浏览器，网上找找方法吧
+    - 同理，基于Chromium内核的浏览器（比如Brave，Edge...）也可以使用。需要查询对应的协议段代号。如Edge对应`edge://net-internals/#dns`
+    - Firefox(Gecko)需要在地址栏输入：`about:networking#dns`
+    - Safari需要按如下步骤操作：`偏好设置` --> `高级`，`在菜单栏中显示 “开发” 菜单`，随后在顶栏的`开发`菜单中进行操作  
+    需要注意的是，对于Safari来说，其更依赖MacOS的DNS缓存。
   - 查询操作系统缓存
     - Windows 系统 使用命令 `ipconfig /displaydns` 查询，可以使用 `ipconfig /flushdns` 清除操作系统缓存
-    - macOS 系统 呃，网上找找方法吧
-    - Linux 系统 同上
+    - macOS 系统不同版本的清除方法不同，可以尝试：  
+    `sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder`  
+    适用于macOS 10.15 (Catalina)以上
+    - Linux 系统根据发行版的不同也有着不同的清除方法。可以尝试以下命令：  
+    `sudo resolvectl flush-caches`  
+    `sudo /etc/init.d/nscd restart`  
+    `sudo systemctl restart dnsmasq`    
+    刷新 DNS 缓存后，可以使用 dig 命令验证缓存是否已成功清除：  
+    `dig baidu.com `  
+    如果查询时间值大于 0 毫秒，则缓存已成功清除。
 
 - 怎么解决 DNS 的问题？
 
@@ -60,7 +71,7 @@ DNS 是进行域名和与之相对应的 IP 地址转换的服务器。DNS 中�
 
   ```text
   8.8.8.8  Google（不推荐作为主 DNS 服务器，可以作为次 DNS 服务器）
-  114.114.114.114   114
+  114.114.114.114   114(疑似存在劫持？)
   223.5.5.5  223.6.6.6  阿里
   119.29.29.29  腾讯
   ```
